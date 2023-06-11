@@ -4,3 +4,21 @@
 body {
   font-family: "Nunito", sans-serif;
 }
+
+// fluid images
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+// link reset
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+// button
+button {
+  cursor: pointer;
+}
