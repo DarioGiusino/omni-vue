@@ -36,7 +36,7 @@ export default {
                 </a>
 
                 <!-- hamburger -->
-                <button class="btn btn-hamburger" type="button" data-bs-toggle="collapse"
+                <button class="btn border-0" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" @click="toggleButton">
                     <img v-if="!isOpen" src="../../assets/img/hamburger_icon.png" alt="hamburger_icon">
                     <img v-if="isOpen" src="../../assets/img/cross_icon.png" alt="hamburger_icon2">
