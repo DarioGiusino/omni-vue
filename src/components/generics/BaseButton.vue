@@ -30,24 +30,27 @@ button {
     background-color: transparent;
 
     position: relative;
-}
 
-button:after {
-    content: "";
-    width: 100%;
-    height: 100%;
+    &:after {
+        content: "";
+        width: 100%;
+        height: 100%;
 
-    border-radius: 10px;
+        border-radius: 10px;
 
-    position: absolute;
-    top: 4px;
-    left: 4px;
-    z-index: -1;
-    transition: 0.2s;
-}
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        z-index: -1;
+        transition: 0.2s;
+    }
 
-button:hover:after {
-    top: 0px;
-    left: 0px;
+    &:hover {
+
+        &:after {
+            top: 0px;
+            left: 0px;
+        }
+    }
 }
 </style>
