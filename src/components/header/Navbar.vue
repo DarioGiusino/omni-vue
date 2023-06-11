@@ -7,6 +7,7 @@ export default {
     data() {
         return {
             isOpen: false,
+            hamPath: "hamburger_icon.png",
             navbarLinks
         }
     },
@@ -14,6 +15,7 @@ export default {
     methods: {
         toggleButton() {
             this.isOpen = !this.isOpen;
+            this.hamPath = this.isOpen ? "cross_icon.png" : "hamburger_icon.png";
         }
     }
 }
@@ -38,8 +40,7 @@ export default {
                 <!-- hamburger -->
                 <button class="btn border-0" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" @click="toggleButton">
-                    <img v-if="!isOpen" src="../../assets/img/hamburger_icon.png" alt="hamburger_icon">
-                    <img v-if="isOpen" src="../../assets/img/cross_icon.png" alt="hamburger_icon2">
+                    <img :src="'/src/assets/img/' + hamPath" alt="hamburger_icon">
                 </button>
             </div>
 
