@@ -66,7 +66,7 @@ export default {
 
             <!-- sign in link(button) -->
             <div class="d-none d-lg-block">
-                <BaseButton class="nav-btn offset-bg" button-label="Accedi alla piattaforma">
+                <BaseButton class="offset-bg" button-label="Accedi alla piattaforma">
                     <img src="../../assets/img/exit_icon.png" alt="exit_icon">
                 </BaseButton>
             </div>
@@ -107,7 +107,7 @@ nav {
         }
     }
 
-    .nav-btn:after {
+    .offset-bg:after {
         background-color: $green-200;
     }
 }
