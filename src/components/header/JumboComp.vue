@@ -12,7 +12,7 @@ export default {
 
 <template>
     <section id="jumbotron" class="mb-5">
-        <div class="container py-5 d-lg-flex justify-content-center align-items-center gap-4">
+        <div class="container py-5 d-lg-flex justify-content-center align-items-center gap-4 gap-xl-5">
             <!-- # jumbo text -->
             <div class="jumbo-text fb-60">
                 <h1 class="mb-4">Il Welfare aziendale a portata di PMI</h1>
