@@ -44,4 +44,35 @@ const planProList = [
   "Sconti e Coupon",
 ];
 
-export { navbarLinks, planGoList, planProList };
+const pmiCards = [
+  {
+    title: "Welfare Guru",
+    paragraph:
+      "È un professionista caace di affiancare le aziende in tutte le fasi propedeutiche all'attivazione di un piano welfare. Sia tu abbia già un sistema premiale basato su premi di risultato o oincentivi diversi, sia che per te sia la prima esperienza il Welfare Guru saprà consigliarti la migliore soluzione in grado di ottimizzare la leva fiscale e incentivare i dipendenti soddisfacendo i loro bisogni persanli e familiari.",
+    image: "carousel_1.png",
+    color: "#283b6c",
+  },
+  {
+    title: "Gestione del piano",
+    paragraph:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incififunt ut labore et dolore magna aliqua.",
+    image: "carousel_2.png",
+    color: "#716aca",
+  },
+  {
+    title: "Servizi originali ed esclusivi",
+    paragraph:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incififunt ut labore et dolore magna aliqua.",
+    image: "carousel_3.png",
+    color: "#426bd1",
+  },
+  {
+    title: "Piattaforma web dedicata",
+    paragraph:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incififunt ut labore et dolore magna aliqua.",
+    image: "carousel_4.png",
+    color: "#299882",
+  },
+];
+
+export { navbarLinks, planGoList, planProList, pmiCards };

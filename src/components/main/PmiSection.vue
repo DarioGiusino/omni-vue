@@ -1,8 +1,15 @@
 <script>
 import BasePmiCard from '../generics/BasePmiCard.vue';
+import { pmiCards } from '../../data';
+
 export default {
     name: "PmiSection",
-    components: { BasePmiCard }
+    components: { BasePmiCard },
+    data() {
+        return {
+            pmiCards
+        }
+    }
 }
 </script>
 
@@ -14,28 +21,21 @@ export default {
         <!-- # cards -->
         <!-- ? < 992px (base cards) -->
         <div class="mt-4 d-lg-none">
-            <BasePmiCard />
+            <BasePmiCard v-for="card in pmiCards" :key="card.title" :title="card.title" :paragraph="card.paragraph"
+                :image="card.image" :color="card.color" />
         </div>
 
         <!-- ? < 992px (carousel) -->
         <div id="pmi-carousel" class="carousel slide d-none d-lg-block">
-
+            <!-- indicators -->
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#pmi-carousel" data-bs-slide-to="0" class="active"
-                    aria-current="true"></button>
-                <button type="button" data-bs-target="#pmi-carousel" data-bs-slide-to="1"></button>
-                <button type="button" data-bs-target="#pmi-carousel" data-bs-slide-to="2"></button>
+                <button v-for="(card, i) in pmiCards" :key="card.title" type="button" data-bs-target="#pmi-carousel"
+                    :data-bs-slide-to="i" :class="i === 0 ? 'active' : ''"></button>
             </div>
-
+            <!-- cards  -->
             <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <BasePmiCard />
-                </div>
-                <div class="carousel-item">
-                    <BasePmiCard />
-                </div>
-                <div class="carousel-item">
-                    <BasePmiCard />
+                <div v-for="(card, i) in pmiCards" :key="card.title" class="carousel-item" :class="i === 0 ? 'active' : ''">
+                    <BasePmiCard :title="card.title" :paragraph="card.paragraph" :image="card.image" :color="card.color" />
                 </div>
             </div>
         </div>

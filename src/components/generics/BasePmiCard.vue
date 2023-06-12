@@ -1,7 +1,12 @@
 <script>
 export default {
     name: "BasePmiCard",
-
+    props: {
+        title: String,
+        paragraph: String,
+        image: String,
+        color: String
+    },
     methods: {
         // build image src
         cardIcon(path) {
@@ -16,23 +21,20 @@ export default {
 </script>
 
 <template>
-    <div id="base-pmi-card" style="background-color: cornflowerblue;" class="text-center text-lg-start">
+    <div id="base-pmi-card" :style="'background-color:' + color" class="text-center text-lg-start mb-5 mb-lg-0">
         <!-- #card-top -->
         <div class="d-lg-flex">
             <!-- # title + paragraph -->
             <div class="card-text fb-60">
-                <h1 class="mb-lg-4">Welfare <br class="d-none d-lg-block">Guru</h1>
+                <h1 class="mb-lg-4">{{ title }}</h1>
                 <p class="mb-0 d-none d-lg-block">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt fugit porro
-                    repellat placeat blanditiis eligendi culpa architecto, commodi eius similique cum illum adipisci,
-                    dolores
-                    voluptate, explicabo eveniet vero tempore tenetur?
+                    {{ paragraph }}
                 </p>
             </div>
 
             <!-- # image -->
             <figure class="p-0 fb-40 d-flex justify-content-center card-image">
-                <img :src="cardIcon('carousel_1.png')" alt="pmi_1">
+                <img :src="cardIcon(image)" :alt="image">
             </figure>
         </div>
 
@@ -60,8 +62,6 @@ export default {
             font-size: 3rem;
         }
     }
-
-
 }
 
 @media only screen and (min-width: 992px) {
