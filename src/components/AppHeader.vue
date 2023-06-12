@@ -1,15 +1,17 @@
 <script>
-import Navbar from './header/Navbar.vue';
+import NavbarComp from './header/NavbarComp.vue';
+import JumboComp from './header/JumboComp.vue';
 
 export default {
     name: "AppHeader",
-    components: { Navbar }
+    components: { NavbarComp, JumboComp }
 }
 </script>
 
 <template>
     <header>
-        <Navbar />
+        <NavbarComp />
+        <JumboComp />
     </header>
 </template>
 

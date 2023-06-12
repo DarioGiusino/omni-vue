@@ -2,7 +2,7 @@
 import { navbarLinks } from '../../data';
 import BaseButton from '../generics/BaseButton.vue';
 export default {
-    name: "HeaderNavbar",
+    name: "NavbarComp",
     components: { BaseButton },
     data() {
         return {
