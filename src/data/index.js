@@ -75,4 +75,27 @@ const pmiCards = [
   },
 ];
 
-export { navbarLinks, planGoList, planProList, pmiCards };
+const pmiBaseCards = [
+  {
+    image: "pmi_1.png",
+    title: "Welfare Guru",
+    text: "per un piano di welfare aziendale personalizzato",
+  },
+  {
+    image: "pmi_2.png",
+    title: "Gestione del piano",
+    text: "welfare e dei fornitori di sevizi a livello locale",
+  },
+  {
+    image: "pmi_3.png",
+    title: "Servizi Welfare",
+    text: "in ambito fexible benifit & employee caring",
+  },
+  {
+    image: "pmi_4.png",
+    title: "Piattaforma Welfare",
+    text: "accessibile da qualunque tipo di dispositivo",
+  },
+];
+
+export { navbarLinks, planGoList, planProList, pmiCards, pmiBaseCards };

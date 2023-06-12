@@ -1,13 +1,14 @@
 <script>
 import BasePmiCard from '../generics/BasePmiCard.vue';
-import { pmiCards } from '../../data';
+import BaseSimpleCard from '../generics/BaseSimpleCard.vue';
+import { pmiCards, pmiBaseCards } from '../../data';
 
 export default {
     name: "PmiSection",
-    components: { BasePmiCard },
+    components: { BasePmiCard, BaseSimpleCard },
     data() {
         return {
-            pmiCards
+            pmiCards, pmiBaseCards
         }
     }
 }
@@ -16,7 +17,7 @@ export default {
 <template>
     <section id="pmi-section" class="container">
         <!-- # title -->
-        <h1 class="text-center">Offriamo alle PMI supporto nei seguenti ambiti</h1>
+        <h1 class="text-center mb-5">Offriamo alle PMI supporto nei seguenti ambiti</h1>
 
         <!-- # cards -->
         <!-- ? < 992px (base cards) -->
@@ -25,7 +26,14 @@ export default {
                 :image="card.image" :color="card.color" />
         </div>
 
-        <!-- ? < 992px (carousel) -->
+        <!-- ? < 992px (top little cards + carousel) -->
+        <div class="my-5 d-flex">
+            <BaseSimpleCard v-for="card in pmiBaseCards" :key="card.title" :image="card.image" :title="card.title"
+                :text="card.text" class="fb-25" />
+
+        </div>
+
+        <!-- carousel -->
         <div id="pmi-carousel" class="carousel slide d-none d-lg-block">
             <!-- indicators -->
             <div class="carousel-indicators">
