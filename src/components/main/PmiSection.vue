@@ -28,8 +28,9 @@ export default {
 
         <!-- ? < 992px (top little cards + carousel) -->
         <div class="my-5 d-flex">
-            <BaseSimpleCard v-for="card in pmiBaseCards" :key="card.title" :image="card.image" :title="card.title"
-                :text="card.text" class="fb-25" />
+            <base-simple-card v-for="card in pmiBaseCards" :key="card.title" :image="card.image" :title="card.title"
+                :text="card.text" class="fb-25">
+            </base-simple-card>
 
         </div>
 

@@ -20,8 +20,8 @@ export default {
 </script>
 
 <template>
-    <div class="simple-card text-center">
-        <figure class="d-flex justify-content-center mb-0">
+    <div class="simple-card text-center d-flex flex-column align-items-center">
+        <figure v-if="image" class="d-flex justify-content-center mb-0">
             <img :src="cardIcon(image)" :alt="image">
         </figure>
 
