@@ -28,7 +28,7 @@ export default {
 </script>
 
 <template>
-    <div id="base-card" class="offset-bg" :style="'color:' + textColor"> <!-- ? offset da togliere -->
+    <div id="base-card" :style="'color:' + textColor">
         <!-- # card top -->
         <header>
             <!-- card title -->
@@ -92,11 +92,6 @@ export default {
 <style lang="scss" scoped>
 @use '../../assets/scss/style.scss' as generics;
 @use '../../assets/scss/partials/variables.scss' as *;
-
-// da togliere
-.offset-bg:after {
-    background-color: $blue-50;
-}
 
 #base-card {
     text-align: center;

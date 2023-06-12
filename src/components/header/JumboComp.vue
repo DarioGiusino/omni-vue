@@ -34,8 +34,8 @@ export default {
 
             <!-- # jumbo card -->
             <div class="jumbo-card fb-40">
-                <BaseCard text-color="#375ab5" title="Piano GO!" euro="12" cents="50" :linkList="planGoList"
-                    buttonText="Attiva Piano GO!" />
+                <BaseCard class="offset-bg" text-color="#375ab5" title="Piano GO!" euro="12" cents="50"
+                    :linkList="planGoList" buttonText="Attiva Piano GO!" />
                 <div class="d-none d-lg-block text-center mt-5">
                     <p class="mb-0">Cerchi un piano su misura per la tua azienda?</p>
                     <a href="#" class="text-decoration-underline">Scopri il <strong>Piano PRO</strong></a>
@@ -83,6 +83,10 @@ export default {
     .jumbo-card {
         position: relative;
         top: 50px;
+
+        .offset-bg:after {
+            background-color: $blue-50;
+        }
     }
 }
 
