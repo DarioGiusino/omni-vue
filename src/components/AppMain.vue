@@ -1,12 +1,14 @@
 <script>
+import PmiSection from './main/PmiSection.vue';
 export default {
-    name: "AppMain"
+    name: "AppMain",
+    components: { PmiSection }
 }
 </script>
 
 <template>
     <main>
-
+        <PmiSection />
     </main>
 </template>
 

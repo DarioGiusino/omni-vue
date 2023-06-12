@@ -10,8 +10,13 @@ export default {
 </script>
 
 <template>
+  <!-- # header -->
   <AppHeader />
+
+  <!-- # main -->
   <AppMain />
+
+  <!-- # footer -->
   <AppFooter />
 </template>
 

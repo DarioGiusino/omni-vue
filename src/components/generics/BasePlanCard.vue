@@ -1,7 +1,7 @@
 <script>
 import BaseButton from './BaseButton.vue';
 export default {
-    name: "BaseCard",
+    name: "BasePlanCard",
     components: { BaseButton },
     props: {
         textColor: String,
@@ -13,7 +13,7 @@ export default {
     },
     data() {
         return {
-            rotate: "rotate",
+            rotate: "",
             isOpen: true,
         }
     },
@@ -21,14 +21,14 @@ export default {
     methods: {
         toggleButton() {
             this.isOpen = !this.isOpen;
-            this.rotate = this.isOpen ? "rotate" : "";
+            this.rotate = this.isOpen ? "" : "rotate";
         }
     }
 }
 </script>
 
 <template>
-    <div id="base-card" :style="'color:' + textColor">
+    <div id="base-plan-card" :style="'color:' + textColor">
         <!-- # card top -->
         <header>
             <!-- card title -->
@@ -93,7 +93,7 @@ export default {
 @use '../../assets/scss/style.scss' as generics;
 @use '../../assets/scss/partials/variables.scss' as *;
 
-#base-card {
+#base-plan-card {
     text-align: center;
     padding: 1.5rem 1rem;
 

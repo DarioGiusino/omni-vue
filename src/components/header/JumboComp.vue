@@ -1,9 +1,9 @@
 <script>
-import BaseCard from '../generics/BaseCard.vue';
+import BasePlanCard from '../generics/BasePlanCard.vue';
 import { planGoList } from '../../data';
 export default {
     name: "JumboComp",
-    components: { BaseCard },
+    components: { BasePlanCard },
     data() {
         return { planGoList }
     }
@@ -34,7 +34,7 @@ export default {
 
             <!-- # jumbo card -->
             <div class="jumbo-card fb-40">
-                <BaseCard class="offset-bg" text-color="#375ab5" title="Piano GO!" euro="12" cents="50"
+                <BasePlanCard class="offset-bg" text-color="#375ab5" title="Piano GO!" euro="12" cents="50"
                     :linkList="planGoList" buttonText="Attiva Piano GO!" />
                 <div class="d-none d-lg-block text-center mt-5">
                     <p class="mb-0">Cerchi un piano su misura per la tua azienda?</p>

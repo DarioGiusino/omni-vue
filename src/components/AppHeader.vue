@@ -10,7 +10,10 @@ export default {
 
 <template>
     <header>
+        <!-- # navbar -->
         <NavbarComp />
+
+        <!-- # jumbotron -->
         <JumboComp />
     </header>
 </template>
