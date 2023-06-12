@@ -26,5 +26,9 @@ button {
 
     padding: 5px 10px;
     background-color: transparent;
+
+    &:focus {
+        outline: 1px solid #0b1038;
+    }
 }
 </style>

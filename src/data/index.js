@@ -22,4 +22,26 @@ const navbarLinks = [
   },
 ];
 
-export { navbarLinks };
+const planGoList = [
+  "Utenti illimitati",
+  "Piattaforma MySarma",
+  "Gestione del contratto online",
+  "MySarma Welfare Card (fino a 250€)",
+  "Importi personalizzabili online",
+  "Sconti e Coupon",
+];
+
+const planProList = [
+  "Utenti illimitati",
+  "Welfare Guru",
+  "Piattaforma MySarma",
+  "Gestione del contratto online",
+  "Credito Welfare (illimitato)",
+  "Importi personalizzabili online",
+  "Gestione Scadenziata degli importi",
+  "Gestione di più bordellini welfare",
+  "Flexible Benefit",
+  "Sconti e Coupon",
+];
+
+export { navbarLinks, planGoList, planProList };

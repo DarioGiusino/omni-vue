@@ -45,7 +45,7 @@ export default {
             </div>
 
             <!-- collapse -->
-            <div class="collapse navbar-collapse flex-grow-0 mt-4 mt-lg-0" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse flex-grow-0 mt-lg-0" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-3">
                     <li v-for="object in navbarLinks" :key="object.title" class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
