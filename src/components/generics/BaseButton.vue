@@ -24,11 +24,7 @@ button {
     line-height: normal;
     font-size: 13px;
 
-    border: 1px solid black;
-    border-radius: 10px;
     padding: 5px 10px;
     background-color: transparent;
-
-    position: relative;
 }
 </style>

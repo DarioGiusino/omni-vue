@@ -26,6 +26,15 @@ button {
 // # utils
 
 .offset-bg {
+  outline: 1px solid black;
+  border: 0;
+  border-radius: 10px;
+
+  position: relative;
+  top: 0;
+  right: 0;
+  z-index: 1;
+
   &:after {
     content: "";
     width: 100%;
