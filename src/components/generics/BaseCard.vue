@@ -1,42 +1,48 @@
 <script>
-import { planGoList } from "../../data";
 import BaseButton from './BaseButton.vue';
 export default {
     name: "BaseCard",
     components: { BaseButton },
+    props: {
+        textColor: String,
+        title: String,
+        euro: String,
+        cents: String,
+        linkList: Array,
+        buttonText: String,
+    },
     data() {
         return {
-            rotate: "",
+            rotate: "rotate",
             isOpen: true,
-            planGoList
         }
     },
 
     methods: {
         toggleButton() {
             this.isOpen = !this.isOpen;
-            this.rotate = this.isOpen ? "" : "rotate";
+            this.rotate = this.isOpen ? "rotate" : "";
         }
     }
 }
 </script>
 
 <template>
-    <div id="base-card" class="offset-bg" style="color:black"> <!-- ? offset da togliere -->
+    <div id="base-card" class="offset-bg" :style="'color:' + textColor"> <!-- ? offset da togliere -->
         <!-- # card top -->
         <header>
             <!-- card title -->
             <div class="card-title">
-                <h1>Piano GO!</h1>
+                <h1>{{ title }}</h1>
                 <sub>a partire da</sub>
             </div>
 
             <!-- card price -->
             <div class="card-price">
                 <div class="d-flex justify-content-center align-items-center gap-2">
-                    <span class="euro-int">€12</span>
+                    <span class="euro-int">€{{ euro }}</span>
                     <div class="d-flex flex-column justify-content-center align-items-center">
-                        <span class="euro-cent">,50</span>
+                        <span class="euro-cent">,{{ cents }}</span>
                         <span class="vat">+ IVA</span>
                     </div>
                 </div>
@@ -61,7 +67,7 @@ export default {
             <!-- collapse -->
             <div class="collapse flex-grow-0 show" id="card-central">
                 <ul class="p-0 text-start">
-                    <li v-for="item in planGoList" :key="item" class="d-flex align-items-center gap-2 mb-3">
+                    <li v-for="  item   in   linkList  " :key="item" class="d-flex align-items-center gap-2 mb-3">
                         <img src="../../assets/img/checklist_icon.png" alt="check_icon">
                         <span>{{ item }}</span>
                     </li>
@@ -73,7 +79,7 @@ export default {
         <footer>
             <!-- button -->
             <div class="d-flex justify-content-center align-items-center mb-4">
-                <base-button class="offset-bg" button-label="Attiva Piano GO!"></base-button>
+                <base-button class="offset-bg" :button-label="buttonText"></base-button>
             </div>
 
             <!-- plan info -->
