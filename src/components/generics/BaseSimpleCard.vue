@@ -42,6 +42,10 @@ export default {
 
     figure {
         height: 150px;
+
+        img {
+            scale: 0.9;
+        }
     }
 }
 

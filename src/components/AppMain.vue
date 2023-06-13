@@ -2,9 +2,10 @@
 import PmiSection from './main/PmiSection.vue';
 import MobileSection from './main/MobileSection.vue';
 import WelfareSection from './main/WelfareSection.vue';
+import WelfareCollabSection from './main/WelfareCollabSection.vue';
 export default {
     name: "AppMain",
-    components: { PmiSection, MobileSection, WelfareSection }
+    components: { PmiSection, MobileSection, WelfareSection, WelfareCollabSection }
 }
 </script>
 
@@ -13,6 +14,7 @@ export default {
         <PmiSection />
         <MobileSection />
         <WelfareSection />
+        <WelfareCollabSection />
     </main>
 </template>
 
