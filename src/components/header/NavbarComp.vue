@@ -32,7 +32,7 @@ export default {
             <!-- sign in + hamburger (mobile) -->
             <div class="d-flex justify-content-center align-items-center gap-3 d-lg-none hambuger">
                 <!-- sign in link -->
-                <a href="#" class="d-flex justify-content-center align-items-center gap-1 sign-in-btn">
+                <a href="#" class="d-flex justify-content-center align-items-center gap-1 sign-in-btn fw-700">
                     <img src="../../assets/img/exit_icon.png" alt="exit_icon">
                     <span>Accedi</span>
                 </a>
@@ -48,7 +48,7 @@ export default {
             <div class="collapse navbar-collapse flex-grow-0 mt-lg-0" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-3">
                     <li v-for="object in navbarLinks" :key="object.title" class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        <a class="nav-link fw-600 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
                             {{ object.title }}
                         </a>
                         <ul class="dropdown-menu border-0">
@@ -59,7 +59,7 @@ export default {
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
+                        <a class="nav-link fw-600" href="#">Blog</a>
                     </li>
                 </ul>
 
@@ -81,7 +81,6 @@ export default {
 nav {
     .sign-in-btn {
         color: $green-700;
-        font-weight: 700;
         font-size: 20px;
     }
 
@@ -95,7 +94,6 @@ nav {
         .nav-link {
             color: $blue-500;
             font-size: 13px;
-            font-weight: 600;
         }
 
         .nav-link.show {

@@ -25,9 +25,9 @@ export default {
             <img :src="cardIcon(image)" :alt="image">
         </figure>
 
-        <h3 class="mb-0">{{ title }}</h3>
+        <h3 class="mb-0 fw-700 fs-s">{{ title }}</h3>
 
-        <p>{{ text }}</p>
+        <p class="fw-300 fs-s">{{ text }}</p>
 
         <!-- slot for button -->
         <slot></slot>
@@ -45,16 +45,6 @@ export default {
         img {
             scale: 0.8;
         }
-    }
-
-    h3 {
-        font-weight: 700;
-        font-size: 1rem;
-    }
-
-    p {
-        font-weight: 300;
-        font-size: 1rem;
     }
 }
 </style>

@@ -15,8 +15,9 @@ export default {
         <div class="container py-5 d-lg-flex justify-content-center align-items-center gap-4 gap-xl-5">
             <!-- # jumbo text -->
             <div class="jumbo-text fb-60">
-                <h1 class="mb-4">Il Welfare aziendale a portata di PMI</h1>
-                <p>My Sarma nasce con l'obiettivo di supportare le aziende a rispondere concretamente ai bisogni di welfare
+                <h1 class="mb-4 fw-600 fs-xxxl">Il Welfare aziendale a portata di PMI</h1>
+                <p class="fw-300 fs-m">My Sarma nasce con l'obiettivo di supportare le aziende a rispondere concretamente ai
+                    bisogni di welfare
                     dei
                     propri dipendenti e collaboratori</p>
 
@@ -24,10 +25,11 @@ export default {
                     <div class="d-none d-lg-block blob-image">
                         <img src="../../assets/img/jumbo_icon.png" alt="jumbo_icon">
                     </div>
-                    <p class="mb-0">Da oggi puoi attivare il tuo piano welfare direttamente online ed in pochi semplici
+                    <p class="mb-0 fw-200 fs-s">Da oggi puoi attivare il tuo piano welfare direttamente online ed in pochi
+                        semplici
                         passaggi grazie
                         al
-                        <a href="#">Piano GO!</a>
+                        <a class="fw-500 text-decoration-underline" href="#">Piano GO!</a>
                     </p>
                 </div>
             </div>
@@ -56,28 +58,6 @@ export default {
 
     .jumbo-text {
         letter-spacing: 0.4px;
-
-        h1 {
-            font-weight: 600;
-            font-size: 3.5rem;
-        }
-
-        p {
-            font-weight: 300;
-            font-size: 1.5rem;
-        }
-
-        .jumbo-blob {
-            p {
-                font-weight: 200;
-                font-size: 1rem;
-
-                a {
-                    font-weight: 500;
-                    text-decoration: underline;
-                }
-            }
-        }
     }
 
     .jumbo-card {

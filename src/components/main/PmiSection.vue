@@ -18,7 +18,7 @@ export default {
 <template>
     <section id="pmi-section" class="container">
         <!-- # title -->
-        <h1 class="text-center mb-5">Offriamo alle PMI supporto nei seguenti ambiti</h1>
+        <h1 class="text-center fw-bold fs-l mb-5">Offriamo alle PMI supporto nei seguenti ambiti</h1>
 
         <!-- # cards -->
         <!-- ? < 992px (base cards) -->
@@ -39,7 +39,6 @@ export default {
         <div class="d-none d-lg-block">
             <BaseCarousel :cards="pmiCards" />
         </div>
-
     </section>
 </template>
 
@@ -48,10 +47,5 @@ export default {
 
 #pmi-section {
     margin-top: 5rem;
-
-    h1 {
-        font-weight: 700;
-        font-size: 2rem;
-    }
 }
 </style>

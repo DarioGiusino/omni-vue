@@ -30,6 +30,7 @@ ul {
 
 // # utils
 
+// bg utils
 .offset-bg {
   outline: 1px solid $blue-800;
   border: 0;
@@ -55,34 +56,86 @@ ul {
   }
 }
 
+// font utils
+* {
+  .fs-xs {
+    font-size: 0.5rem;
+  }
+  .fs-s {
+    font-size: 1rem;
+  }
+  .fs-m {
+    font-size: 1.5rem;
+  }
+  .fs-l {
+    font-size: 2rem;
+  }
+  .fs-xl {
+    font-size: 2.5rem;
+  }
+  .fs-xxl {
+    font-size: 3rem;
+  }
+  .fs-xxxl {
+    font-size: 3.5rem;
+  }
+
+  .fw-200 {
+    font-weight: 200;
+  }
+  .fw-300 {
+    font-weight: 300;
+  }
+  .fw-400 {
+    font-weight: 400;
+  }
+  .fw-500 {
+    font-weight: 500;
+  }
+  .fw-600 {
+    font-weight: 600;
+  }
+  .fw-700 {
+    font-weight: 700;
+  }
+  .fw-800 {
+    font-weight: 800;
+  }
+}
+
 // flex utils
-.fb-10 {
-  flex-basis: 10%;
-}
-.fb-20 {
-  flex-basis: 20%;
-}
-.fb-25 {
-  flex-basis: 25%;
-}
-.fb-30 {
-  flex-basis: 30%;
-}
-.fb-40 {
-  flex-basis: 40%;
-}
-.fb-50 {
-  flex-basis: 50%;
-}
-.fb-60 {
-  flex-basis: 60%;
-}
-.fb-70 {
-  flex-basis: 70%;
-}
-.fb-80 {
-  flex-basis: 80%;
-}
-.fb-90 {
-  flex-basis: 90%;
+* {
+  .fb-10 {
+    flex-basis: 10%;
+  }
+  .fb-20 {
+    flex-basis: 20%;
+  }
+  .fb-25 {
+    flex-basis: 25%;
+  }
+  .fb-30 {
+    flex-basis: 30%;
+  }
+  .fb-40 {
+    flex-basis: 40%;
+  }
+  .fb-50 {
+    flex-basis: 50%;
+  }
+  .fb-60 {
+    flex-basis: 60%;
+  }
+  .fb-70 {
+    flex-basis: 70%;
+  }
+  .fb-75 {
+    flex-basis: 75%;
+  }
+  .fb-80 {
+    flex-basis: 80%;
+  }
+  .fb-90 {
+    flex-basis: 90%;
+  }
 }

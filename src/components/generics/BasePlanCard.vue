@@ -33,20 +33,20 @@ export default {
         <header>
             <!-- card title -->
             <div class="card-title">
-                <h1>{{ title }}</h1>
+                <h1 class="fw-700 mb-0">{{ title }}</h1>
                 <sub>a partire da</sub>
             </div>
 
             <!-- card price -->
-            <div class="card-price">
+            <div class="card-price fw-800">
                 <div class="d-flex justify-content-center align-items-center gap-2">
-                    <span class="euro-int">€{{ euro }}</span>
+                    <span class="fs-xxxl">€{{ euro }}</span>
                     <div class="d-flex flex-column justify-content-center align-items-center">
-                        <span class="euro-cent">,{{ cents }}</span>
-                        <span class="vat">+ IVA</span>
+                        <span class="fs-m">,{{ cents }}</span>
+                        <span class="vat fw-200">+ IVA</span>
                     </div>
                 </div>
-                <p class="price-period d-flex justify-content-center align-items-center gap-2">
+                <p class="price-period fw-400 mb-0 d-flex justify-content-center align-items-center gap-2">
                     all'anno / per utente
                     <img src="../../assets/img/info_icon.png" alt="info_icon">
                 </p>
@@ -67,7 +67,7 @@ export default {
             <!-- collapse -->
             <div class="collapse flex-grow-0 show" id="card-central">
                 <ul class="p-0 text-start">
-                    <li v-for="  item   in   linkList  " :key="item" class="d-flex align-items-center gap-2 mb-3">
+                    <li v-for="item in linkList" :key="item" class="d-flex align-items-center gap-2 mb-3 fw-500">
                         <img src="../../assets/img/checklist_icon.png" alt="check_icon">
                         <span>{{ item }}</span>
                     </li>
@@ -79,12 +79,12 @@ export default {
         <footer>
             <!-- button -->
             <div class="d-flex justify-content-center align-items-center mb-4">
-                <base-button class="offset-bg" :button-label="buttonText"></base-button>
+                <base-button class="offset-bg fw-700" :button-label="buttonText"></base-button>
             </div>
 
             <!-- plan info -->
             <p class="mb-0 opacity-50">Vuoi maggiori informazioni sul piano?</p>
-            <a href="#">Scopri di più</a>
+            <a class="text-decoration-underline fw-700" href="#">Scopri di più</a>
         </footer>
     </div>
 </template>
@@ -98,35 +98,15 @@ export default {
     padding: 1.5rem 1rem;
 
     header {
-        .card-title {
-            h1 {
-                font-weight: 700;
-                margin-bottom: 0;
-            }
-        }
-
         .card-price {
-            font-weight: 800;
             line-height: normal;
             color: #112340;
 
-            .euro-int {
-                font-size: 3.5rem;
-            }
-
-            .euro-cent {
-                font-size: 1.5rem;
-            }
-
             .vat {
-                font-weight: 200;
                 font-size: 0.7rem;
             }
 
             .price-period {
-                font-weight: 400;
-                margin-bottom: 0;
-
                 position: relative;
                 bottom: 8px;
             }
@@ -149,7 +129,6 @@ export default {
 
             li {
                 line-height: normal;
-                font-weight: 500;
                 font-size: 18px;
 
                 img {
@@ -165,17 +144,11 @@ export default {
 
         .offset-bg {
             padding: 10px 60px;
-            font-weight: 700;
             font-size: 1.3rem;
 
             &:after {
                 background-color: $black-50;
             }
-        }
-
-        a {
-            font-weight: 700;
-            text-decoration: underline;
         }
     }
 }

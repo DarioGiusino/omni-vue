@@ -26,7 +26,7 @@ export default {
         <div class="d-lg-flex">
             <!-- # title + paragraph -->
             <div class="card-text fb-60">
-                <h1 class="mb-lg-4">{{ title }}</h1>
+                <h1 class="mb-lg-4 fw-700 fs-xxl">{{ title }}</h1>
                 <p class="mb-0 d-none d-lg-block">
                     {{ paragraph }}
                 </p>
@@ -55,13 +55,6 @@ export default {
     color: $black-50;
     padding: 2rem;
     border-radius: 30px;
-
-    .card-text {
-        h1 {
-            font-weight: 700;
-            font-size: 3rem;
-        }
-    }
 }
 
 @media only screen and (min-width: 992px) {
