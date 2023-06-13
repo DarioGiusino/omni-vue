@@ -37,6 +37,7 @@ export default {
 #welfare-collab-section {
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
 
     color: $black-50;
     padding-top: 5rem;
