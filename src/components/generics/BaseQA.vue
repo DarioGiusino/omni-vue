@@ -23,7 +23,7 @@ export default {
 </script>
 
 <template>
-    <div class="border-bottom">
+    <div class="base-qa border-bottom">
         <p class="my-3 fw-700 fs-s d-flex align-items-center justify-content-between" data-bs-toggle="collapse"
             :data-bs-target="'#qacollapse' + index" @click="toggleButton">
             {{ title }}
@@ -39,11 +39,15 @@ export default {
 <style lang="scss" scoped>
 @use '../../assets/scss/partials/variables.scss' as *;
 
-.rotate {
-    rotate: 180deg;
-}
+.base-qa {
+    cursor: pointer;
 
-.collapse {
-    color: $black-350;
+    .rotate {
+        rotate: 180deg;
+    }
+
+    .collapse {
+        color: $black-350;
+    }
 }
 </style>

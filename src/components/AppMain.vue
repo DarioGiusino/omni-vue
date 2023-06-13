@@ -15,12 +15,25 @@ export default {
 
 <template>
     <main>
+        <!-- # pmi section -->
         <PmiSection />
+
+        <!-- # mobile section -->
         <MobileSection />
+
+        <!-- # welfare section -->
         <WelfareSection />
+
+        <!-- # welfare collab section-->
         <WelfareCollabSection />
+
+        <!-- # plans section -->
         <PlanSection />
+
+        <!-- # omni group section -->
         <OmniGroupSection />
+
+        <!-- # q&a section -->
         <QASection />
     </main>
 </template>
