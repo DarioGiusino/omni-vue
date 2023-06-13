@@ -4,9 +4,11 @@ import MobileSection from './main/MobileSection.vue';
 import WelfareSection from './main/WelfareSection.vue';
 import WelfareCollabSection from './main/WelfareCollabSection.vue';
 import PlanSection from './main/PlanSection.vue';
+import OmniGroupSection from './main/OmniGroupSection.vue';
+
 export default {
     name: "AppMain",
-    components: { PmiSection, MobileSection, WelfareSection, WelfareCollabSection, PlanSection }
+    components: { PmiSection, MobileSection, WelfareSection, WelfareCollabSection, PlanSection, OmniGroupSection }
 }
 </script>
 
@@ -17,6 +19,7 @@ export default {
         <WelfareSection />
         <WelfareCollabSection />
         <PlanSection />
+        <OmniGroupSection />
     </main>
 </template>
 
