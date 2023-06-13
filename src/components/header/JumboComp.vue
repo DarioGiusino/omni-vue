@@ -25,7 +25,7 @@ export default {
         <div class="container py-5 d-lg-flex justify-content-center align-items-center gap-4 gap-xl-5">
             <!-- # jumbo text -->
             <div class="jumbo-text fb-60">
-                <h1 class="mb-4 fw-600 fs-xxxl">Il Welfare aziendale a portata di PMI</h1>
+                <h1 class="mb-4 fw-600">Il Welfare aziendale a portata di PMI</h1>
                 <p class="fw-300 fs-m">My Sarma nasce con l'obiettivo di supportare le aziende a rispondere concretamente ai
                     bisogni di welfare
                     dei
@@ -45,7 +45,7 @@ export default {
             </div>
 
             <!-- # jumbo card -->
-            <div class="jumbo-card fb-40">
+            <div class="jumbo-card fb-30">
                 <BasePlanCard class="offset-bg" textColor="#375ab5" title="Piano GO!" euro="12" cents="50"
                     :linkList="planGoList" buttonText="Attiva Piano GO!" arrowID="0" />
                 <div class="d-none d-lg-block text-center mt-5">
@@ -68,6 +68,10 @@ export default {
 
     .jumbo-text {
         letter-spacing: 0.4px;
+
+        h1 {
+            font-size: 4rem;
+        }
     }
 
     .jumbo-card {
