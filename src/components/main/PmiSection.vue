@@ -16,7 +16,7 @@ export default {
 </script>
 
 <template>
-    <section id="pmi-section" class="container">
+    <section id="pmi-section" class="container section-top-margin">
         <!-- # title -->
         <h1 class="text-center fw-bold fs-l mb-5">Offriamo alle PMI supporto nei seguenti ambiti</h1>
 
@@ -42,10 +42,4 @@ export default {
     </section>
 </template>
 
-<style lang="scss" scoped>
-@use '../../assets/scss/partials/variables.scss' as *;
-
-#pmi-section {
-    margin-top: 5rem;
-}
-</style>
+<style lang="scss" scoped></style>
