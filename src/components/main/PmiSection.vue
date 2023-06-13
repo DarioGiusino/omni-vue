@@ -2,10 +2,11 @@
 import BasePmiCard from '../generics/BasePmiCard.vue';
 import BaseSimpleCard from '../generics/BaseSimpleCard.vue';
 import { pmiCards, pmiBaseCards } from '../../data';
+import BaseCarousel from '../generics/BaseCarousel.vue';
 
 export default {
     name: "PmiSection",
-    components: { BasePmiCard, BaseSimpleCard },
+    components: { BasePmiCard, BaseSimpleCard, BaseCarousel },
     data() {
         return {
             pmiCards, pmiBaseCards
@@ -35,18 +36,8 @@ export default {
         </div>
 
         <!-- carousel -->
-        <div id="pmi-carousel" class="carousel slide d-none d-lg-block">
-            <!-- indicators -->
-            <div class="carousel-indicators">
-                <button v-for="(card, i) in pmiCards" :key="card.title" type="button" data-bs-target="#pmi-carousel"
-                    :data-bs-slide-to="i" :class="i === 0 ? 'active' : ''"></button>
-            </div>
-            <!-- cards  -->
-            <div class="carousel-inner">
-                <div v-for="(card, i) in pmiCards" :key="card.title" class="carousel-item" :class="i === 0 ? 'active' : ''">
-                    <BasePmiCard :title="card.title" :paragraph="card.paragraph" :image="card.image" :color="card.color" />
-                </div>
-            </div>
+        <div class="d-none d-lg-block">
+            <BaseCarousel :cards="pmiCards" />
         </div>
 
     </section>
@@ -61,23 +52,6 @@ export default {
     h1 {
         font-weight: 700;
         font-size: 2rem;
-    }
-
-    #pmi-carousel {
-        .carousel-indicators {
-            bottom: -45px;
-
-            [data-bs-target] {
-                width: 8px;
-                height: 8px;
-                border-radius: 50%;
-                background-color: $black-400;
-            }
-
-            .active {
-                width: 15px;
-            }
-        }
     }
 }
 </style>
