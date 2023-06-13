@@ -4,7 +4,8 @@ export default {
     props: {
         image: String,
         title: String,
-        text: String
+        text: String,
+        isSquare: Boolean
     },
     methods: {
         // build image src
@@ -21,8 +22,8 @@ export default {
 
 <template>
     <div class="simple-card text-center d-flex flex-column align-items-center">
-        <figure v-if="image" class="d-flex justify-content-center mb-0">
-            <img :src="cardIcon(image)" :alt="image">
+        <figure v-if="image" class="d-flex justify-content-center align-items-center mb-3">
+            <img :src="cardIcon(image)" :alt="image" :style="'aspect-ratio:' + (isSquare ? '10/8' : '10/5')">
         </figure>
 
         <h3 class="mb-0 fw-700 fs-s">{{ title }}</h3>
@@ -40,10 +41,18 @@ export default {
     padding: 10px;
 
     figure {
-        height: 200px;
+        height: 150px;
+    }
+}
 
-        img {
-            scale: 0.8;
+@media only screen and (max-width: 991px) {
+    .simple-card {
+        h3 {
+            font-size: 1.8rem;
+        }
+
+        p {
+            font-size: 1.2rem;
         }
     }
 }

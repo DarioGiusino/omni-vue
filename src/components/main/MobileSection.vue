@@ -38,11 +38,10 @@ export default {
 
         <!-- ? > 992px -->
         <div class="d-lg-none">
-            <p class="fs-m mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut
-                labore
-                et dolore
-                magna aliqua.</p>
+            <p class="fs-m mb-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+            </p>
 
             <div class="card-link">
                 <a href="#" class="text-uppercase">
@@ -63,7 +62,7 @@ export default {
     }
 
     p {
-        color: #7d8797;
+        color: $black-350;
     }
 
     a {

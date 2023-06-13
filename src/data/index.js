@@ -98,4 +98,34 @@ const pmiBaseCards = [
   },
 ];
 
-export { navbarLinks, planGoList, planProList, pmiCards, pmiBaseCards };
+const welfareCards = [
+  {
+    image: "welfare_1.png",
+    title: "Cos'è il Welfare Aziendale?",
+    text: "Tutti ne parlano ma pochi conoscono il suo potenziale",
+  },
+  {
+    image: "welfare_2.png",
+    title: "Come posso attrarre?",
+    text: "Fidelizza e attrai nuovi talenti con un piano welfare mirato",
+  },
+  {
+    image: "welfare_3.png",
+    title: "Normative e vantaggi fiscali",
+    text: "Risparmiare è facile grazie al tuo nuovo piano welfare",
+  },
+  {
+    image: "welfare_4.png",
+    title: "Storie attrattive",
+    text: "Fidelizza e attrai nuovi talenti con un piano welfare mirato",
+  },
+];
+
+export {
+  navbarLinks,
+  planGoList,
+  planProList,
+  pmiCards,
+  pmiBaseCards,
+  welfareCards,
+};
