@@ -10,6 +10,7 @@ export default {
         cents: String,
         linkList: Array,
         buttonText: String,
+        arrowID: String
     },
     data() {
         return {
@@ -60,12 +61,12 @@ export default {
         <main>
             <!-- button toggler -->
             <button class="btn border-0 opacity-25 d-lg-none mb-4" :class="rotate" type="button" data-bs-toggle="collapse"
-                data-bs-target="#card-central" @click="toggleButton">
+                :data-bs-target="'#card-central' + arrowID" @click="toggleButton">
                 <font-awesome-icon :icon="['fas', 'chevron-up']" />
             </button>
 
             <!-- collapse -->
-            <div class="collapse flex-grow-0 show" id="card-central">
+            <div class="collapse flex-grow-0 show" :id="'card-central' + arrowID">
                 <ul class="p-0 text-start">
                     <li v-for="item in linkList" :key="item" class="d-flex align-items-center gap-2 mb-3 fw-500">
                         <img src="../../assets/img/checklist_icon.png" alt="check_icon">
@@ -124,7 +125,7 @@ export default {
             rotate: 180deg;
         }
 
-        #card-central {
+        [id^="card-central"] {
             color: #112340;
 
             li {

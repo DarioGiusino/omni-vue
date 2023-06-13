@@ -36,8 +36,8 @@ export default {
 
             <!-- # jumbo card -->
             <div class="jumbo-card fb-40">
-                <BasePlanCard class="offset-bg" text-color="#375ab5" title="Piano GO!" euro="12" cents="50"
-                    :linkList="planGoList" buttonText="Attiva Piano GO!" />
+                <BasePlanCard class="offset-bg" textColor="#375ab5" title="Piano GO!" euro="12" cents="50"
+                    :linkList="planGoList" buttonText="Attiva Piano GO!" arrowID="0" />
                 <div class="d-none d-lg-block text-center mt-5">
                     <p class="mb-0">Cerchi un piano su misura per la tua azienda?</p>
                     <a href="#" class="text-decoration-underline">Scopri il <strong>Piano PRO</strong></a>

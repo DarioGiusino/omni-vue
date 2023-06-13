@@ -17,7 +17,6 @@ export default {
 <template>
     <section id="welfare-collab-section" class="section-top-margin text-center px-lg-5"
         :style="`background-image: url(${imagePath('welfare_bg.png')})`">
-
         <div class="container">
             <h3>Sfrutta al meglio il tuo potenziale e fai crescere</h3>
 
