@@ -27,7 +27,7 @@ export default {
                 :image="card.image" :color="card.color" />
         </div>
 
-        <!-- ? < 992px (top little cards + carousel) -->
+        <!-- ? > 992px (top little cards + carousel) -->
         <!-- little cards -->
         <div class="my-5 d-none d-lg-flex">
             <base-simple-card v-for="card in pmiBaseCards" :key="card.title" :image="card.image" :title="card.title"

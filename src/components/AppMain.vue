@@ -1,14 +1,16 @@
 <script>
 import PmiSection from './main/PmiSection.vue';
+import MobileSection from './main/MobileSection.vue';
 export default {
     name: "AppMain",
-    components: { PmiSection }
+    components: { PmiSection, MobileSection }
 }
 </script>
 
 <template>
     <main>
         <PmiSection />
+        <MobileSection />
     </main>
 </template>
 
