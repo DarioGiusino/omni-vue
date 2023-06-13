@@ -121,6 +121,33 @@ const welfareCards = [
   },
 ];
 
+const QAList = [
+  {
+    title: "Che differenza c'è tra il Piano Go e il Piano Pro?",
+    text: "Il Piano Go è stato pensato che gestire il welfare aziendale derivante da CCNL o i fringe benefits. Per godere della fiscalità agevolata è necessario rispettare nell’erogazione di questi beni il limite massimo annuo di 258, 23 euro previsto dal Tuir per ciascun dipendente. Restando entro questa soglia, infatti, la somma non concorre a formare reddito da lavoro dipendente. Il Piano PRO invece è non ha limiti di importo e consente di accedere a tutti i servizi welfare (flexible benefits).",
+  },
+  {
+    title: "Che servizi comprende il Piano Go?",
+    text: "Il Piano Go consente di accedere a tutti i buoni spesa, buoni carburante, buoni regalo ed alcuni voucher selezionati da MySarma come le esperienze o pacchetti vacanze.",
+  },
+  {
+    title: "Come avviene la gestione del Piano Go?",
+    text: "La gestione del Piano Go è totalmente automatizzata: è possibile sottoscrivere il contratto direttamente online, effettuare il pagamento ed indicare beneficiari ed importi del bonus (fino a 258 euro). Questi riceveranno direttamente via email le credenziali per accedere alla piattaforma, mentre l’azienda riceverà in automatico la fattura elettronica utile per la deduzione integrale del costo.",
+  },
+  {
+    title: "Il Piano Pro comprende i servizi del Piano Go?",
+    text: "Sì, in automatico il Piano Pro comprende anche i fringe benefit previsti dal Piano Go a meno che l’azienda decida di escluderlo per alcuni o tutti i dipendenti perché già erogati sotto altre forme.",
+  },
+  {
+    title: "Che servizi comprende il Piano Pro?",
+    text: "Il Piano Pro prevede tutti i servizi dei flexible benefits organizzati nelle 3 macro categorie: /n· Versamenti: Previdenza complementare e sanità integrativa /n· Rimborsi: Spese scolastiche, spese per non autosufficienza, trasporto pubblico locale, Interessi passivi del mutuo /n· Voucher: Viaggi, salute, benessere, cultura, sport, fringe benefits, ecc.",
+  },
+  {
+    title: "È possibile passare dal Piano Go al Piano Pro",
+    text: "Trattandosi di due fattispecie diverse non è possibile passare in automatico dal Piano Go al Piano Pro ma occorre sottoscrivere un nuovo contratto",
+  },
+];
+
 export {
   navbarLinks,
   planGoList,
@@ -128,4 +155,5 @@ export {
   pmiCards,
   pmiBaseCards,
   welfareCards,
+  QAList,
 };

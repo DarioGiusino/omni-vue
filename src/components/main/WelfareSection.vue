@@ -22,7 +22,7 @@ export default {
         <!-- # main -->
         <main class="d-lg-flex">
             <base-simple-card v-for="(card, i) in welfareCards" :key="card.title" :image="card.image" :title="card.title"
-                :text="card.text" :isSquare="i == 0 ? false : true" class="fb-25 mb-5 mb-lg-0">
+                :text="card.text" :isSquare="i !== 0" class="fb-25 mb-5 mb-lg-0">
                 <BaseButton class="offset-bg fw-700 px-4 py-2" buttonLabel="Scopri di più" />
             </base-simple-card>
         </main>
