@@ -6,6 +6,16 @@ export default {
     components: { BasePlanCard },
     data() {
         return { planGoList }
+    },
+    methods: {
+        // build image src
+        imagePath(path) {
+            // build src
+            const url = new URL(`../../assets/img/${path}`, import.meta.url);
+
+            // return src
+            return url.href;
+        }
     }
 }
 </script>
@@ -23,7 +33,7 @@ export default {
 
                 <div class="jumbo-blob">
                     <div class="d-none d-lg-block blob-image">
-                        <img src="../../assets/img/jumbo_icon.png" alt="jumbo_icon">
+                        <img :src="imagePath('jumbo_icon.png')" alt="jumbo_icon">
                     </div>
                     <p class="mb-0 fw-200 fs-s">Da oggi puoi attivare il tuo piano welfare direttamente online ed in pochi
                         semplici

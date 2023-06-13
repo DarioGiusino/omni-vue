@@ -16,6 +16,15 @@ export default {
         toggleButton() {
             this.isOpen = !this.isOpen;
             this.hamPath = this.isOpen ? "cross_icon.png" : "hamburger_icon.png";
+        },
+
+        // build image src
+        imagePath(path) {
+            // build src
+            const url = new URL(`../../assets/img/${path}`, import.meta.url);
+
+            // return src
+            return url.href;
         }
     }
 }
@@ -33,7 +42,7 @@ export default {
             <div class="d-flex justify-content-center align-items-center gap-3 d-lg-none hambuger">
                 <!-- sign in link -->
                 <a href="#" class="d-flex justify-content-center align-items-center gap-1 sign-in-btn fw-700">
-                    <img src="../../assets/img/exit_icon.png" alt="exit_icon">
+                    <img :src="imagePath('exit_icon.png')" alt="exit_icon">
                     <span>Accedi</span>
                 </a>
 
@@ -68,7 +77,7 @@ export default {
             <!-- sign in link(button) -->
             <div class="d-none d-lg-block">
                 <BaseButton class="offset-bg" button-label="Accedi alla piattaforma">
-                    <img src="../../assets/img/exit_icon.png" alt="exit_icon">
+                    <img :src="imagePath('exit_icon.png')" alt="exit_icon">
                 </BaseButton>
             </div>
         </div>

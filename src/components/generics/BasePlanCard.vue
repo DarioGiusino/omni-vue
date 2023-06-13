@@ -23,6 +23,15 @@ export default {
         toggleButton() {
             this.isOpen = !this.isOpen;
             this.rotate = this.isOpen ? "" : "rotate";
+        },
+
+        // build image src
+        imagePath(path) {
+            // build src
+            const url = new URL(`../../assets/img/${path}`, import.meta.url);
+
+            // return src
+            return url.href;
         }
     }
 }
@@ -49,7 +58,8 @@ export default {
                 </div>
                 <p class="price-period fw-400 mb-0 d-flex justify-content-center align-items-center gap-2">
                     all'anno / per utente
-                    <img src="../../assets/img/info_icon.png" alt="info_icon">
+                    <img :src="imagePath('info_icon.png')" alt="info_icon">
+
                 </p>
             </div>
         </header>
@@ -69,7 +79,7 @@ export default {
             <div class="collapse flex-grow-0 show" :id="'card-central' + arrowID">
                 <ul class="p-0 text-start">
                     <li v-for="item in linkList" :key="item" class="d-flex align-items-center gap-2 mb-3 fw-500">
-                        <img src="../../assets/img/checklist_icon.png" alt="check_icon">
+                        <img :src="imagePath('checklist_icon.png')" alt="check_icon">
                         <span>{{ item }}</span>
                     </li>
                 </ul>
