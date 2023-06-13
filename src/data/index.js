@@ -148,6 +148,25 @@ const QAList = [
   },
 ];
 
+const footerList = [
+  {
+    title: "Chi siamo",
+    links: ["Vision & Mission", "Il gruppo Omninext", "Contattaci"],
+  },
+  {
+    title: "Soluzioni welfare",
+    links: [
+      "Flexible benefit",
+      "Premio di risultato",
+      "Performance Management",
+    ],
+  },
+  {
+    title: "Seguici su",
+    links: ["Linkedin"],
+  },
+];
+
 export {
   navbarLinks,
   planGoList,
@@ -156,4 +175,5 @@ export {
   pmiBaseCards,
   welfareCards,
   QAList,
+  footerList,
 };

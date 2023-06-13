@@ -26,6 +26,7 @@ button {
 // list reset
 ul {
   list-style-type: none;
+  padding-left: 0;
 }
 
 // # utils
@@ -140,6 +141,17 @@ ul {
   }
   .fb-90 {
     flex-basis: 90%;
+  }
+}
+// flex responsive utils
+@media only screen and (min-width: 576px) {
+  .fb-sm-40 {
+    flex-basis: 40%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .fb-lg-20 {
+    flex-basis: 20%;
   }
 }
 

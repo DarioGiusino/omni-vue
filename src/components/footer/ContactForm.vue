@@ -49,11 +49,11 @@ export default {
 @use '../../assets/scss/partials/variables.scss' as *;
 
 #contact-form {
-    .contact-container {
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
+    .contact-container {
         color: $black-50;
         padding-top: 5rem;
         padding-bottom: 5rem;
